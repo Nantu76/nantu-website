@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* nantu CI — Primärpalette */
+  --color-beech-green:  #8DBF38;
+  --color-forest-green: #4A7A30;
+  --color-moss-green:   #6A8A3E;
+  --color-earth-brown:  #7A5535;
+  --color-dark-earth:   #2E1D0E;
+  --color-parchment:    #F5F0E8;
+
+  /* nantu CI — Licht & Himmel */
+  --color-morning-gold: #D4A843;
+  --color-spring-light: #C8DDA8;
+  --color-sky-far:      #A8C8DC;
+  --color-bark:         #8B6240;
+  --color-humus:        #4A3020;
+  --color-mist-green:   #E8F0D8;
+  --color-silver-dusk:  #D8D4C8;
+  --color-milk-white:   #FAF8F2;
+
+  /* Fonts */
+  --font-display: var(--font-nunito);
+  --font-body:    var(--font-open-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #F5F0E8;
+  --foreground: #2E1D0E;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), 'Open Sans', sans-serif;
 }
